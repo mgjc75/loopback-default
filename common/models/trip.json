@@ -1,0 +1,115 @@
+{
+  "name": "Trip",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "postgresql": {
+    "schema": "public",
+    "table": "trip"
+  },
+  "properties": {
+    "tMileage": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "t_mileage",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "tPpl": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 4,
+      "scale": 3,
+      "postgresql": {
+        "columnName": "t_ppl",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 3,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "tCost": {
+      "type": "String",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "t_cost",
+        "dataType": "money",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "tTrip": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "postgresql": {
+        "columnName": "t_trip",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "tDate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "t_date",
+        "dataType": "date",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
